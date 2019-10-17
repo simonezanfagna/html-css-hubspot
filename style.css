@@ -370,6 +370,7 @@ padding-right: 80px
   margin: 26px 0 15px;
   padding-top: 26px;
   text-align: center;
+  border-top: 1px solid #e0e6ed;
 }
 
 .widget_colonna ul li{
