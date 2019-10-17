@@ -5,6 +5,7 @@
 }
 body{
   color: #33475b;
+  font-family: 'Open Sans', sans-serif;
 }
 
 ul{
@@ -15,6 +16,10 @@ a{
   text-decoration: none;
 }
 
+button{
+  cursor: pointer;
+}
+
 .fa-sort-down{
   color: #7c98b6;
   margin-left: 10px;
@@ -23,6 +28,7 @@ a{
 
 header{
   height: 155px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
 }
 .sfondo_top{
   background-color: #f5f8fa;
@@ -65,14 +71,27 @@ nav{
   color: inherit;
 }
 
+hr{
+  left: 0px;
+  top: 50%;
+  transform: translate(0,-50%);
+  position: absolute;
+  margin-left: 120px;
+  height: 20px;
+  border-color: lightgray;
+  background-color: lightgray;
+}
+
 .contact{
-  margin-left: 125px;
+  margin-left: 140px;
   color: inherit;
 }
 
 .contact a{
   float: left;
+  color: inherit;
 }
+
 
 .header1_right{
   float: right;
@@ -82,6 +101,109 @@ nav{
   position: absolute;
 }
 
+.fa-search{
+  color: #19adc3
+}
+
+.log{
+  border: 1px solid #ff7a59;
+  color: #ff7a59;
+  padding: 8px 16px;
+  border-radius: 3px;
+  background-color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.get{
+  border: 1px solid #ff7a59;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 3px;
+  background-color: #ff7a59;
+}
+
 .menu{
   height: 81px;
+  position: relative;
+}
+.menu::after{
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.logo{
+  float: left;
+  left: 0;
+  top: 50%;
+  transform: translate(0 , -50%);
+  position: absolute;
+
+}
+
+.menu_right ul, .menu_right li{
+  display: inline-block;
+}
+
+.menu_right{
+  float: right;
+  right: 0;
+  top: 50%;
+  transform: translate(0 , -50%);
+  position: absolute;
+}
+
+.menu_right li{
+  padding: 0 16px;
+}
+
+.menu_right a{
+  color: inherit;
+  font-weight: bold;
+}
+
+.jumbo{
+  background-color: #fff2ee;
+  /* height: 690px; */
+  /* background-image: url("https://i.postimg.cc/W4tGDrzm/Immagine.png");
+  background-position: bottom right;
+  background-repeat: no-repeat; */
+}
+
+.jumbo_width{
+  max-width: 1080px;
+  margin: auto;
+  padding: 64px 0;
+}
+
+.text_jumbo{
+  max-width: 432px;
+  text-align: left;
+}
+
+.text_jumbo h1{
+  font-size: 3.438rem;
+  line-height: 1.1818;
+  margin: 28px 0;
+  font-weight: 700;
+}
+
+.text_jumbo p{
+  font-size: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  line-height: 1.625;
+}
+
+.big{
+  padding: 26px 48px;
+  font-weight: 700;
+}
+
+#small{
+  font-size: 0.75rem;
+  line-height: 1.5;
+  max-width: 200px;
+  margin: 24px 0;
 }
