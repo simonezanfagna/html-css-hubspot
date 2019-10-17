@@ -212,13 +212,21 @@ hr{
   background-color: #f5f8fa;
 }
 
+
 .widget_width{
   max-width: 1080px;
   margin: auto;
+  padding-bottom: 112px;
 }
 
 .widget_posizione{
   text-align: center;
+}
+
+.widget_posizione::after{
+  clear: both;
+  content: "";
+  display: table;
 }
 
 .widget_centro_top{
@@ -313,4 +321,59 @@ padding-right: 80px
   margin-right: 10px;
   height: 25px;
   vertical-align: top;
+}
+
+.widget_colonne{
+  background-color: #f5f8fa;
+  max-width: 960px;
+  margin: auto;
+}
+
+#widget_colonna1, #widget_colonna2, #widget_colonna3{
+  width: 31.111111%;
+  float: left;
+  display: inline-block;
+}
+
+#widget_colonna2{
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.widget_colonna{
+  background-color: white;
+  padding: 32px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.03);
+}
+
+.widget_colonna img{
+  width: 100%;
+  height: 150px;
+}
+
+.widget_colonna h3{
+  font-size: 1.375rem;
+  font-weight: bold;
+  line-height: 1.3636;
+  text-align: center;
+  margin: 11px 0;
+}
+
+.widget_colonna p{
+  font-size: 13.8px;
+  margin: 14px 0;
+  text-align: left;
+}
+
+.widget_colonna h4{
+  font-size: 13px;
+  margin: 26px 0 15px;
+  padding-top: 26px;
+  text-align: center;
+}
+
+.widget_colonna ul li{
+  text-align: left;
+  margin-bottom: 5px;
+  font-size: 13px;
 }
