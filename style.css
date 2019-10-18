@@ -6,6 +6,7 @@
 body{
   color: #33475b;
   font-family: 'Open Sans', sans-serif;
+  line-height: 1.625;
 }
 
 ul{
@@ -486,4 +487,86 @@ padding-right: 80px
   font-weight: 400;
   position: absolute;
   line-height: 40px;
+}
+
+.customers{
+  background-color: white;
+  padding-top: 100px;
+  color: inherit;
+}
+
+.customers_width{
+  margin: 0 auto;
+  max-width: 1080px;
+  box-sizing: content-box;
+  padding: 0 32px;
+}
+
+.customers_width::after{
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.customers_left{
+  float: left;
+  max-width: 330px;
+  padding: 0 40px 20px 20px;
+}
+.customers_left{
+  clear: both;
+  content: "";
+  display: table;
+}
+.customers_left h2{
+  margin: 0 0 5px;
+  font-size: 2.5em;
+  font-weight: 700;
+  line-height: 1.3125;
+}
+
+.customers_left p{
+  font-size: 1.2em;
+  letter-spacing: 0.02em;
+}
+
+.customers_right{
+  max-width: 600px;
+  float: right;
+}
+
+.customers_right::after{
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.logo_customer{
+  padding: 20px;
+  width: 25%;
+}
+
+.logo_customer img{
+  width: 100%;
+  max-height: 100%;
+}
+
+.customers_top .logo_customer{
+  float: left;
+}
+
+.customers_top::after{
+  clear: both;
+  display: table;
+  content: "";
+}
+
+.customers_bottom .logo_customer{
+  float: left;
+}
+
+.customers_bottom::after{
+  clear: both;
+  display: table;
+  content: "";
 }
