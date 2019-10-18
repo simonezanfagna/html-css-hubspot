@@ -425,3 +425,65 @@ padding-right: 80px
 .table{
   margin: 80px 0 0;
 }
+
+.elemento{
+  width: 25%;
+  padding: 30px;
+  text-align: center;
+}
+
+.table_top .elemento{
+  float: left;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+#elemento4{
+  border-right: 0;
+}
+
+.table_top::after{
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.table_bottom .elemento{
+  float: left;
+  border-right: 1px solid #fff;
+}
+
+#elemento8{
+  border-right: 0;
+}
+
+.table_bottom::after{
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.elemento img{
+  margin-bottom: 15px;
+}
+
+.elemento h2{
+  margin-bottom: 5px;
+  font-size: 2.5em;
+  line-height: 1em;
+  position: relative;
+}
+
+.elemento p{
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
+.after_plus::after{
+  content: "+";
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  line-height: 40px;
+}
