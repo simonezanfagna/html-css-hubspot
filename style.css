@@ -61,46 +61,80 @@ nav{
   z-index: 1000000;
 }
 
-.language, .contact {
+.language, .contact{
   left: 0;
   top: 50%;
   transform: translate(0 , -50%);
   position: absolute;
 }
 
+.contact{
+  margin-left: 148px;
+}
+
 .language{
   border-right: 2px solid lightgray;
+}
+
+.language::after{
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.contact{
+  float: left;
+  color: inherit;
+}
+
+.contact::after{
+  clear: both;
+  content: "";
+  display: table;
 }
 
 .language img{
   height: 20px;
   margin-right: 10px;
-  float: left;
-}
-
-.language span{
-  float: left;
-}
-
-.span_padding{
-  padding-right: 20px;
 }
 
 .languages{
   display: none;
+  background-color: #fff;
+  border: 1px solid #cbd6e2;
+  border-radius: .1875rem;
+  box-shadow: 0 1px 24px rgba(45,62,80,0.12);
+  padding: 12px 0;
+  margin-top: 50px;
 }
 
-.language a, .languages a{
+.drop:hover .languages{
+  display: inline-block;
+}
+
+.drop{
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.language a{
+  padding-right: 20px;
   color: inherit;
 }
 
-.contact{
-  margin-left: 140px;
+.languages a{
   color: inherit;
+  padding: 0.25rem 1.25rem;
+  font-size: 0.875rem;
+  display: block;
+}
+
+.languages a:hover{
+  background-color: #e5f5f8;
 }
 
 .contact a{
-  float: left;
   color: inherit;
 }
 
