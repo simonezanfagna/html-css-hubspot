@@ -689,6 +689,12 @@ footer{
   float: left;
 }
 
+.menu_footer::after{
+  clear: both;
+  display: table;
+  content: "";
+}
+
 .menu_footer_colonna::after{
   clear: both;
   content: "";
@@ -748,4 +754,107 @@ footer{
   clear: both;
   content: "";
   display: table;
+}
+
+.languages_footer{
+  padding: 2rem 0;
+}
+
+.languages_footer ul{
+  text-align: center;
+}
+
+.languages_footer li{
+  display: inline-block;
+}
+
+.languages_footer a{
+  color: #cbd6e2;
+  padding: 0.5rem 1rem;
+}
+
+.languages_footer a:hover{
+  color: #7fd1de;
+}
+
+.footer_bottom{
+  padding: 2rem 0;
+  border-top: 1px solid #7c98b6;
+  width: 100%;
+}
+
+.footer_bottom::after{
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.footer_logo{
+  float: left;
+}
+.footer_logo::after{
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.footer_logo p{
+  color: #cbd6e2;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.footer_copyright a{
+  color: #cbd6e2;
+  padding: 0.5rem 1rem;
+}
+
+.footer_copyright a:hover{
+  color: #7fd1de;
+}
+
+.footer_copyright{
+  float: right;
+}
+
+
+.footer_copyright li{
+  float: left;
+  display: inline-block;
+}
+
+.footer_copyright::after{
+  clear: both;
+  content: "";
+  display: table;
+
+}
+
+.chat_button{
+  background-color: rgb(66, 91, 118);
+  box-shadow: 0 1px 6px rgba(0,0,0,.1), 0 2px 24px rgba(0,0,0,.2);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  border: 1px solid rgb(66, 91, 118);
+  position: relative;
+}
+
+.fa-comment-alt{
+  color: white;
+  font-size: xx-large;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.chat{
+  bottom: 0;
+  right: 0;
+  padding-bottom: 16px;
+  padding-right: 16px;
+  position: fixed;
 }
